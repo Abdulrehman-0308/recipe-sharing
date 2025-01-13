@@ -2,15 +2,15 @@ import CustomImage from "./customimage";
 
 export default function HeroSection() {
   const images = [
-    { id: 1, src: "/images/img_1.jpg", title: "Butter Chicken" },
-    { id: 2, src: "/images/img_2.jpg", title: "Image 2" },
-    { id: 3, src: "/images/img_3.jpg", title: "Image 3" },
-    { id: 4, src: "/images/img_4.jpg", title: "Image 4" },
-    { id: 5, src: "/images/img_5.jpg", title: "Image 5" },
-    { id: 6, src: "/images/img_6.jpg", title: "Image 6" },
-    { id: 7, src: "/images/img_7.jpg", title: "Image 7" },
-    { id: 8, src: "/images/img_8.jpg", title: "Image 8" },
-    { id: 9, src: "/images/img_9.jpg", title: "Image 9" },
+    { id: 1, src: "/images/img_1.jpg", title: "Paneer Masala" },
+    { id: 2, src: "/images/img_2.jpg", title: "Tandoori chicken" },
+    { id: 3, src: "/images/img_3.jpg", title: "Chicken Biryani" },
+    { id: 4, src: "/images/img_4.jpg", title: "Korma" },
+    { id: 5, src: "/images/img_5.jpg", title: "Butter Chicken" },
+    { id: 6, src: "/images/img_6.jpg", title: "Fish Fry" },
+    { id: 7, src: "/images/img_7.jpg", title: "Chicken Tikka" },
+    { id: 8, src: "/images/img_8.jpg", title: "Mutton Biryani" },
+    { id: 9, src: "/images/img_9.jpg", title: "Samosa" },
   ];
   return (
     <div className="section hero">

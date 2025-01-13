@@ -1,39 +1,54 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import PreviousSearches from "../components/PreviousSearches";
+import RecipeCard from "../components/RecipeCard";
+
 export default function Recipes() {
-  const searches = [
-    "butter chicken",
-    "tandoori chicken",
-    "paneer masala",
-    "chicken biryani",
-    "mutton biryani",
-    "chicken tikka",
-    "fish fry",
-    "samosa",
-    "seekh kabab",
-  ];
+  const recipes = [
+    {
+      title: "Paneer Masala",
+      image: "/img/images/img_1.jpg",
+    },
+    {
+      title: "Tandoori chicken",
+      image: "/img/images/img_2.jpg",
+    },
+    {
+      title: "Chicken Biryani",
+      image: "/img/images/img_3.jpg",
+    },
+    {
+      title: "Korma",
+      image: "/img/images/img_4.jpg",
+    },
+    {
+      title: "Butter Chicken",
+      image: "/img/images/img_5.jpg",
+    },
+    {
+      title: "Fish Fry",
+      image: "/img/images/img_6.jpg",
+    },
+    {
+      title: "Chicken Tikka",
+      image: "/img/images/img_7.jpg",
+    },
+    {
+      title: "Mutton Biryani",
+      image: "/img/images/img_8.jpg",
+    },
+    {
+      title: "Samosa",
+      image: "/img/images/img_9.jpg",
+    },
+  ].sort(() => Math.random() - 0.5);
 
   return (
     <div>
-      <div className="previous-searches section">
-        <h2>Previous Searches</h2>
-        <div className="previous-searches-container">
-          {searches.map((search, index) => (
-            <div
-              key={index}
-              style={{ animationDelay: index * 0.1 + "s" }}
-              className="search-item"
-            >
-              {search}
-            </div>
-          ))}
-        </div>
-        <div className="search-box">
-          <input type="text" placeholder="search for a recipe..." />
-          <button className="btn">
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
-        </div>
+      <PreviousSearches />
+      <div className="recipes-container">
+        {/* <RecipeCard />  */}
+        {recipes.map((recipe, index) => (
+          <RecipeCard key={index} recipe={recipe} />
+        ))}
       </div>
     </div>
   );
