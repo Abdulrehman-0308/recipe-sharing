@@ -29,9 +29,9 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar container">
-        <a href="#!" className="logo">
+        <Link to="/" className="logo">
           RecipeHub
-        </a>
+        </Link>
         <div className="nav-links">
           {links.map((link) => (
             <Link
